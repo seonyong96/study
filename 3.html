@@ -4,8 +4,10 @@
     <title>WEB1 - JavsScript</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="colors.js"></script>
 </head>
 <body>
+    <input type="button" value="night" onclick="nightDayHandler(this)">
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
         <ol>
@@ -16,10 +18,24 @@
         <div id="article">
             <h2>JavaScript</h2>
             안녕하세요 최선용 입니다. <b><u>JavsScript</u> 스터디</b> 중 입니다.<br>
-            <br>
+            <br><br>
+            <input type="button" value="night" onclick="
+                var target = document.querySelector('body')
+                target.style.backgroundColor='black';
+                target.style.color='white';
+            ">
+            <input type="button" value="day" onclick="
+                var target = document.querySelector('body')
+                target.style.backgroundColor='white';
+                target.style.color='black';
+            ">
+            <br><br>
+            <input type="button" value="night" onclick="nightDayHandler(this)">
+            <br><br>
+            <input type="button" value="실습1" onclick="location.href='ex1.html';">
+            <input type="button" value="실습2" onclick="location.href='ex2.html';">
         </div>
     </div>
 
 </body>
 </html>
-
